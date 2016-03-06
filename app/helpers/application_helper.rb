@@ -1,2 +1,6 @@
 module ApplicationHelper
-end
+  
+  def provide?
+    !provide(:title)
+  end
+end 
