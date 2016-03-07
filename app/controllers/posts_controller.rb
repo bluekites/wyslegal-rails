@@ -26,11 +26,16 @@ class PostsController < ApplicationController
   end
   
   def update
-    
+    if @post.update(post_params)
+      redirect_to @post, notice: "Success!"
+    else
+      render :edit, notice: "Failed to update post."
+    end
   end
   
   def destroy
-    
+    @post.destroy
+    redirect_to posts_path
   end
   
   private
