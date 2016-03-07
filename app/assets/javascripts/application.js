@@ -14,3 +14,22 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+function initialize() {
+  var myCenter=new google.maps.LatLng(33.759753,-117.991321);
+  var mapProp = {
+    center: myCenter,
+    zoom: 13,
+    scrollwheel: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  var marker=new google.maps.Marker({
+    position:myCenter
+    });
+  google.maps.event.addListener(map, 'click', function(event){
+        this.setOptions({scrollwheel:true});
+    });
+  marker.setMap(map);
+}
+
