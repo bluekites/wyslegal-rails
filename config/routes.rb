@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  resources :posts
+  resources :posts, path: "blog"
   
   root 'home#index'
 end
