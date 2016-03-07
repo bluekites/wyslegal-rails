@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   
-  before_action :set_up_list, only: [:show, :edit, :update, :destroy]
+  before_action :set_up_post, only: [:show, :edit, :update, :destroy]
   
   def index
     @posts = Post.all
@@ -10,15 +10,19 @@ class PostsController < ApplicationController
   end
   
   def new
-    
+    @post = Post.new
   end
   
   def create
-    
+    @post = Post.new(post_params)
+    if @post.save
+      redirect_to @post, notice: "Success!"
+    else
+      render :new, notice: "Failed to create post."
+    end
   end
   
   def edit
-    
   end
   
   def update
