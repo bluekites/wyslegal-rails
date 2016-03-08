@@ -1,3 +1,8 @@
+<% provide(:title, "Will's Blog") %>
+
+<% if user_signed_in? %>
+  <%= link_to "New Post", new_post_path %>
+<% end %>
 
 <h1>Posts here</h1>
 
