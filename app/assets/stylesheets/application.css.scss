@@ -13,6 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+// mobile nav
+#mobile-nav {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+
+.menu-btn span {
+	display: block;
+	width: 19px;
+	height: 3px;
+	margin: 4px 0;
+	background: rgb(0,0,0);
+	z-index: 99;
+}
+
+.mobile-menu{
+	display: none;
+}
  
 #googleMap {
   margin-top: 40px;

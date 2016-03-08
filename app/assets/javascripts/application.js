@@ -15,6 +15,17 @@
 //= require turbolinks
 //= require_tree .
 
+
+$(document).ready(function(){
+  
+  // Responsive Nav
+  $('.menu-btn').click(function(){
+    $('.mobile-menu').slideToggle("slow");
+  });
+  
+});
+
+// Google Map
 function initialize() {
   var myCenter=new google.maps.LatLng(33.759753,-117.991321);
   var mapProp = {
@@ -32,4 +43,5 @@ function initialize() {
     });
   marker.setMap(map);
 }
+
 
