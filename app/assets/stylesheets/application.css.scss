@@ -19,12 +19,21 @@
 }
 
 
+// -----Nav Bar-----
+
+// desktop nav
+#desktop-nav {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
 // mobile nav
 #mobile-nav {
-  /*display: none;
+  display: none;
   @media screen and (max-width: 768px) {
     display: block;
-  }*/
+  }
 }
 
 .menu-btn span {
@@ -43,6 +52,8 @@
 	}
 }
  
+ 
+// Google Map
 #googleMap {
   margin-top: 40px;
   margin-left: auto;

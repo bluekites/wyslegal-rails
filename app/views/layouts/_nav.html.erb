@@ -1,14 +1,28 @@
-<div id="mobile-nav">
-  <div class="menu-btn">
-    <span></span>
-    <span></span>
-    <span></span>
+<header id="main-navigation" class="clearfix">
+  <div id="desktop-nav">
+    <%= link_to "WYS Legal", root_path %>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <% if user_signed_in? %>
+        <%= link_to "New Post", new_post_path %>
+        <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+      <% end %>
+    </nav>
   </div>
-  <div class="mobile-menu">
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
+  <div id="mobile-nav">
+    <div class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="mobile-menu">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
   </div>
-</div>
+</header>
