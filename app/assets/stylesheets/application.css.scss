@@ -14,12 +14,17 @@
  *= require_self
  */
 
+* {
+  box-sizing: border-box;
+}
+
+
 // mobile nav
 #mobile-nav {
-  display: none;
+  /*display: none;
   @media screen and (max-width: 768px) {
     display: block;
-  }
+  }*/
 }
 
 .menu-btn span {
@@ -33,6 +38,9 @@
 
 .mobile-menu{
 	display: none;
+	ul {
+	  margin: 0;
+	}
 }
  
 #googleMap {
