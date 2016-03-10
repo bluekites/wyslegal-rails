@@ -1,8 +1,8 @@
 <header id="main-navigation" class="clearfix">
   <div id="desktop-nav">
-    <%= link_to "WYS Legal", root_path %>
+    <%= link_to "WYS Legal", root_path, 'data-no-turbolink' => true %>
     <nav>
-      <%= link_to "Home", root_path %>
+      <%= link_to "Home", root_path, 'data-no-turbolink' => true %>
       <a href="#">About</a>
       <a href="#">Contact</a>
       <% if user_signed_in? %>
