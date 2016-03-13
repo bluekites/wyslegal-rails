@@ -13,6 +13,7 @@ gem 'friendly_id'
 gem 'will_paginate'
 gem 'figaro'
 gem 'devise'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'sqlite3'
