@@ -17,8 +17,20 @@
 @import 'colors';
 @import "font-awesome";
 
-* {
+// -----General-----
+
+html, body {
   box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
 }
 
 
