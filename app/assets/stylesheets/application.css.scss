@@ -33,11 +33,26 @@ html, body {
   clear: both;
 }
 
+ul {
+	  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 
 // -----Nav Bar-----
 
 // desktop nav
 #desktop-nav {
+  padding: 2rem 5%;
+  .logo {
+    float: left;
+  }
+  nav {
+    float: right;
+  }
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -62,9 +77,7 @@ html, body {
 
 .mobile-menu{
 	display: none;
-	ul {
-	  margin: 0;
-	}
+	
 }
  
  

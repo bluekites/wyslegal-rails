@@ -34,8 +34,8 @@ Rails.application.configure do
     domain: "example.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: "",
-    password: ""
+    user_name: ENV["GMAIL_USERNAME"],
+    password: ENV["GMAIL_PASSWORD"]
   }
   
   config.action_mailer.default_url_options = { :host => 'https://wyslegal-rails-bluekites.c9users.io/' }
