@@ -25,7 +25,16 @@ $(document).ready(function(){
   });
   
   // Back to top button
-  $('.to-top').click(function(){
+  $(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.to-top').fadeIn();
+		} else {
+			$('.to-top').fadeOut();
+		}
+	});
+  
+  $('.to-top').click(function(e){
+    e.preventDefault();
     $('html, body').animate({scrollTop : 0},800);
   });
   

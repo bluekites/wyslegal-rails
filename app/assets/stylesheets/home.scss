@@ -10,8 +10,16 @@
   background-size: cover;
   background-position: 0% 40%;
   height: 55em;
-  .logo-img {
-    -webkit-filter: invert(100%); 
-    filter: invert(100%); 
+  .logo-div {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .logo-img {
+      -webkit-filter: invert(100%); 
+      filter: invert(100%);
+      width: 300px;
+    }
   }
 }
