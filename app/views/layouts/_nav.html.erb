@@ -3,7 +3,7 @@
     <%= link_to "WYS Legal", root_path, 'data-no-turbolink' => true, class: "logo" %>
     <nav>
       <%= link_to "Home", root_path, 'data-no-turbolink' => true %>
-      <a href="#">About</a>
+      <%= link_to "Blog", posts_path %>
       <%= link_to "Contact", new_contact_path %>
       <% if user_signed_in? %>
         <%= link_to "New Post", new_post_path %>
