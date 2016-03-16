@@ -1,13 +1,21 @@
 <% provide(:title, "Home") %>
 
-<section class="masthead">
+<section id="masthead">
   <div class="logo-div">
     <%= image_tag('logo.png', class: "logo-img") %>
     <h1>Welcome Home Will</h1>
   </div>
 </section>
 
-<%= image_tag('headshot.jpg', class: "headshot") %>
+<section id="about">
+  <div class="profile">
+    <div class="line"></div>
+    <%= image_tag('headshot.jpg', class: "headshot") %>
+    <div class="line"></div>
+  </div>
+  <h2>William Sung</h2>
+</section>
+
 
 <div id="googleMap"></div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdKzsBfYKmGDcpT9FOcWRrSNy4h9D94fU"></script>

@@ -2,10 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import 'colors';
 
 // Master header
 
-.masthead {
+#masthead {
   background-image: url('/assets/hero.jpg');
   background-size: cover;
   background-position: 0% 40%;
@@ -23,3 +24,27 @@
     }
   }
 }
+
+// About section
+#about {
+  text-align: center;
+  .profile {
+    margin-top: 6rem;
+    text-align: center;
+    .line {
+      display: inline-block;
+      width: 20%;
+      border-bottom: solid 2px $dark-color;
+      
+    }
+    .headshot {
+      position: relative;
+      border-radius: 50%;
+      margin-left: 2em;
+      margin-right: 2em;
+      padding: 1em;
+      border: solid 2px $dark-color;
+    }
+  }
+}
+

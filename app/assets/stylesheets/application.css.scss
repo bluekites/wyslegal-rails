@@ -17,6 +17,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'colors';
+@import 'clearfix';
 @import "font-awesome";
 
 // -----General-----
@@ -27,16 +28,6 @@
 
 html, body {
   font-size: 16px;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
 }
 
 section {
