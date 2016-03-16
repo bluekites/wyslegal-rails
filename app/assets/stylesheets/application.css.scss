@@ -25,6 +25,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  font-size: 16px;
+}
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -45,6 +49,9 @@ ul {
 
 a {
   text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -88,12 +95,15 @@ p, li {
   background-color: $light-color;
   // desktop nav
   #desktop-nav {
-    padding: 2rem 5%;
+    padding: 1.5rem 5%;
     .logo {
       float: left;
+      border: solid 2px $border-color;
+      padding: .5em 1.5em;
     }
     nav {
       float: right;
+      padding-top: .7em;
     }
     @media screen and (max-width: 768px) {
       display: none;
@@ -134,7 +144,7 @@ p, li {
   position: fixed;
   top: 80%;
   left: 90%;
-  font-size: 2rem;
+  font-size: 1.3rem;
   padding: .5em;
   border: solid 1px $dark-color;
 }
