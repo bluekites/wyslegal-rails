@@ -49,6 +49,7 @@ ul {
 
 a {
   text-decoration: none;
+  letter-spacing: .1em;
   &:hover {
     text-decoration: none;
   }
@@ -100,10 +101,14 @@ p, li {
       float: left;
       border: solid 2px $border-color;
       padding: .5em 1.5em;
+      text-transform: uppercase;
     }
     nav {
       float: right;
       padding-top: .7em;
+      a {
+        padding-left: .7em;
+      }
     }
     @media screen and (max-width: 768px) {
       display: none;
