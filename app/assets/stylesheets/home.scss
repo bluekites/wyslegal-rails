@@ -37,7 +37,7 @@
     .line {
       display: inline-block;
       width: 20%;
-      border-bottom: solid 2px $dark-color;
+      border-bottom: solid 2px $border-color;
     }
     .headshot {
       position: relative;
@@ -45,7 +45,7 @@
       margin-left: 2em;
       margin-right: 2em;
       padding: 1em;
-      border: solid 2px $dark-color;
+      border: solid 2px $border-color;
     }
   }
   .wrapper {
