@@ -24,6 +24,18 @@ $(document).ready(function(){
     $('.mobile-menu').slideToggle("slow");
   });
   
+  // Flash message timer
+  setTimeout(function(){
+    $('.alert-notice').fadeOut("slow", function(){
+      $('this').remove();
+    })
+  }, 2000);
+  setTimeout(function(){
+    $('.alert-alert').fadeOut("slow", function(){
+      $('this').remove();
+    })
+  }, 2000);
+  
   // Back to top button
   $(window).scroll(function(){
 		if ($(this).scrollTop() > 100) {

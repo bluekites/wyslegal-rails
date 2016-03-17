@@ -125,6 +125,33 @@ p, li {
   }
 }
 
+// Flash message
+@mixin flash-message {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 1.6rem 0;
+  text-align: center;
+  z-index: 999;
+}
+
+.alert-notice {
+  @include flash-message;
+  background-color: $notice-color;
+  opacity: 0.5;
+  .msg {
+    color: white;
+  }
+}
+
+.alert-alert {
+  @include flash-message;
+  background-color: $warning-color;
+  opacity: 0.5;
+  .msg {
+    color: white;
+  }
+}
  
  
 // Google Map
