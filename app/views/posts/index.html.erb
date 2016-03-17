@@ -4,11 +4,13 @@
   <%= link_to "New Post", new_post_path %>
 <% end %>
 
-<h1>Posts here</h1>
-
-<% @posts.each do |post| %>
-  <%= link_to post.title, post %><br>
-  <%= post.created_at.strftime('%A, %B %d') %>
+<% if @posts.count == 0 %>
+  <h2>Nothing here!</h2>
+<% else %>
+  <h1>Posts here</h1>
+  <% @posts.each do |post| %>
+    <%= link_to post.title, post %><br>
+    <%= post.created_at.strftime('%A, %B %d') %>
+  <% end %>
 <% end %>
-
 
