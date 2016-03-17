@@ -2,11 +2,11 @@
   <div id="desktop-nav" class="clearfix">
     <%= link_to "WYS Legal", root_path, 'data-no-turbolink' => true, class: "logo" %>
     <nav>
-      <%= link_to "Home", root_path, 'data-no-turbolink' => true %>
-      <%= link_to "Blog", posts_path %>
-      <%= link_to "Contact", new_contact_path %>
+      <%= link_to "Home", root_path, 'data-no-turbolink' => true, class: "#{active_class(root_path)}" %>
+      <%= link_to "Blog", posts_path, class: "#{active_class(posts_path)}"%>
+      <%= link_to "Contact", new_contact_path, class: "#{active_class(new_contact_path)}" %>
       <% if user_signed_in? %>
-        <%= link_to "New Post", new_post_path %>
+        <%= link_to "New Post", new_post_path, class: "#{active_class(new_post_path)}" %>
         <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
       <% end %>
     </nav>

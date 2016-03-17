@@ -53,11 +53,22 @@ a {
   &:hover {
     text-decoration: none;
   }
+  &:visited {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.active {
+  font-weight: 700;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 1em 0;
   font-family: 'Open Sans', sans-serif;
+  color: $dark-color;
 }
 
 h1 {
@@ -88,6 +99,7 @@ p {
   font-family: 'Gentium Book Basic', serif;
   font-size: 1.1rem;
   line-height: 1.75;
+  color: $dark-color;
 }
 
 li {

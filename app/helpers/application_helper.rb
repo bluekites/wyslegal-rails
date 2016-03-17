@@ -11,4 +11,10 @@ module ApplicationHelper
     }
     Redcarpet::Markdown.new(renderer, options).render(content).html_safe
   end
+  
+  #active link helper
+  def active_class(link_path)
+    current_page?(link_path) ? "active" : ""
+  end
+ 
 end 
