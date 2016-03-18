@@ -91,10 +91,24 @@ section {
     display: flex;
     flex-wrap: wrap;
     .flex-children {
+      position: relative;
       width: 27%;
       margin: 2rem 3.165%;
       height: 15rem;
-      background-color: black;
+      background-color: white;
+      .flex-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+        opacity: 0;
+        &:hover {
+          opacity: 1;
+          transition: 1000ms;
+        }
+      }
     }
   }
 }
