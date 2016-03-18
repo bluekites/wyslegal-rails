@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  
+  rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
   before_action :set_up_post, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
   
@@ -46,5 +46,9 @@ class PostsController < ApplicationController
     
     def post_params
       params.require(:post).permit(:title, :content)
+    end
+    
+    def record_not_found
+      render :file => 'public/404.html', status: 404
     end
 end
