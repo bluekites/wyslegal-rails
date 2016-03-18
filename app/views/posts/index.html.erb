@@ -1,16 +1,18 @@
 <% provide(:title, "Will's Blog") %>
 
-<% if user_signed_in? %>
-  <%= link_to "New Post", new_post_path %>
-<% end %>
-
-<% if @posts.count == 0 %>
-  <h2>Nothing here!</h2>
-<% else %>
-  <h1>Posts here</h1>
-  <% @posts.each do |post| %>
-    <%= link_to post.title, post %><br>
-    <%= post.created_at.strftime('%A, %B %d') %>
+<div class="posts-wrapper">
+  <% if @posts.count == 0 %>
+    <h1>Check back soon!!</h1>
+  <% else %>
+    <div class="heading">
+      <div class="line"></div>
+      <h2 class="center">Musings</h2>
+      <div class="line"></div>
+    </div>
+    <% @posts.each do |post| %>
+      <p><%= post.created_at.strftime('%A, %B %d') %></p>
+      <h3><%= link_to post.title, post %></h3>
+      <hr>
+    <% end %>
   <% end %>
-<% end %>
-
+</div>
