@@ -120,6 +120,7 @@ p {
 li {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.1rem;
+  list-style: none;
   line-height: 1.75;
 }
 
@@ -130,7 +131,7 @@ li {
   background-color: $light-color;
   // desktop nav
   #desktop-nav {
-    padding: 1rem 5%;
+    padding: 1.5rem 5%;
     .logo {
       float: left;
       border: solid 2px $border-color;
@@ -151,19 +152,32 @@ li {
   // mobile nav
   #mobile-nav {
     display: none;
-    @media screen and (max-width: 768px) {
+    padding: 1rem;
+    @media (max-width: 768px) {
       display: block;
     }
-    .menu-btn span {
-    	display: block;
-    	width: 19px;
-    	height: 3px;
-    	margin: 4px 0;
-    	background: rgb(0,0,0);
-    	z-index: 99;
+    .menu-btn {
+      span {
+      	display: block;
+      	width: 19px;
+      	height: 3px;
+      	margin: 4px 0;
+      	background-color: $dark-color;
+      	z-index: 99;
+      }
     }
     .mobile-menu{
+      padding-top: .3rem;
     	display: none;
+    	hr {
+    	  margin: 1rem 0 .5rem;
+    	  border: 1px solid $border-color;
+    	}
+    	ul {
+    	  margin: 0;
+        padding-top: .7rem;
+        padding-left: 0;
+    	}
     }
   }
 }
@@ -193,7 +207,7 @@ footer {
   position: absolute;
   width: 100%;
   top: 0;
-  padding: 1.1rem 0;
+  padding: 1.6rem 0;
   text-align: center;
   z-index: 999;
 }
