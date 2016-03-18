@@ -39,11 +39,11 @@ section {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -5.5rem;
+  margin: 0 auto -4.9rem;
 }
 
 .push {
-  height: 5.5rem;
+  height: 4.9rem;
 }
 
 .wrapper {
@@ -169,12 +169,15 @@ li {
 // -----Footer-----
 
 footer {
-  padding: 1.5rem 5%;
+  padding: 1rem 5%;
+  background-color: $light-color;
   p {
     float: left;
+    padding-top: .4rem;
   }
   .footer-link {
     float: right;
+    padding-top: .8rem;
   }
 }
 
