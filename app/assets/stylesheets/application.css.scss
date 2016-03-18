@@ -28,10 +28,22 @@
 
 html, body {
   font-size: 16px;
+  height: 100%;
 }
 
 section {
   margin: 0 auto;
+}
+
+.body-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -5.5rem;
+}
+
+.push {
+  height: 5.5rem;
 }
 
 .wrapper {
@@ -115,7 +127,7 @@ li {
   background-color: $light-color;
   // desktop nav
   #desktop-nav {
-    padding: 1.5rem 5%;
+    padding: 1rem 5%;
     .logo {
       float: left;
       border: solid 2px $border-color;
@@ -152,6 +164,20 @@ li {
     }
   }
 }
+
+
+// -----Footer-----
+
+footer {
+  padding: 1.5rem 5%;
+  p {
+    float: left;
+  }
+  .footer-link {
+    float: right;
+  }
+}
+
 
 // Flash message
 @mixin flash-message {
