@@ -12,19 +12,19 @@ section {
 
 .heading {
   text-align: center;
-    .line {
-      display: inline-block;
-      width: 20%;
-      border-bottom: solid 2px $border-color;
-    }
-    h2 {
-      position: relative;
-      display: inline-block;
-      top: .2em;
-      margin-left: 2em;
-      margin-right: 2em;
-      padding: 1em;
-    }
+  .line {
+    display: inline-block;
+    width: 20%;
+    border-bottom: solid 2px $border-color;
+  }
+  h2 {
+    position: relative;
+    display: inline-block;
+    top: .2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 1em;
+  }
 }
 
 
@@ -87,5 +87,15 @@ section {
 
 #services {
   background-color: $light-color;
+  .flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+    .flex-children {
+      width: 27%;
+      margin: 2rem 3.165%;
+      height: 15rem;
+      background-color: black;
+    }
+  }
 }
 
