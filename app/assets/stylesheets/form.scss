@@ -1,0 +1,35 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'section-title';
+
+textarea {
+  min-height: 15rem;
+  resize: none;
+}
+
+.form-wrapper {
+  max-width: 30rem;
+  margin: 2rem auto 8rem;
+  text-align: center;
+  .form-label {
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    font-weight: bold;
+    color: $dark-color;
+  }
+  .form-field {
+    width: 90%;
+    margin: .7rem 5%;
+  }
+  .submit-button {
+    background: $primary-color;
+    color: $light-color;
+    text-decoration: none;
+    padding: .5em 1em;
+    font-weight: 700;
+    border: none;
+  }
+}

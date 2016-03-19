@@ -1,6 +1,10 @@
 <% provide(:title, "Contact Me") %>
 
-<h1 id="page-title">Contact Will</h1>
+<div class="heading">
+  <div class="line"></div>
+  <h2 class="center">Musings</h2>
+  <div class="line"></div>
+</div>
 
 <div class="form-wrapper">
   <% if @contact.errors.any? %>
@@ -10,12 +14,12 @@
     <% end %>
   <% end %>
   <%= form_for(@contact) do |f| %>
-    <%= f.label :name, "Name" %>
-    <%= f.text_field :name %><br/>
-    <%= f.label :email, "Email" %>
-    <%= f.text_field :email %><br/>
-    <%= f.label :content, "Content" %>
-    <%= f.text_area :content %>
-    <%= f.submit "Submit" %>
+    <%= f.label :name, "Name", class: "form-label" %>
+    <%= f.text_field :name, class: "form-field" %><br/>
+    <%= f.label :email, "Email", class: "form-label" %>
+    <%= f.text_field :email, class: "form-field" %><br/>
+    <%= f.label :content, "Content", class: "form-label" %>
+    <%= f.text_area :content, class: "form-field" %>
+    <%= f.submit "Submit", class: "submit-button" %>
   <% end %>
 </div>
