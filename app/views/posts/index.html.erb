@@ -10,7 +10,7 @@
       <div class="line"></div>
     </div>
     <% @posts.each do |post| %>
-      <p><%= post.created_at.strftime('%A, %B %d') %></p>
+      <p class="post-time"><%= post.created_at.strftime('%A, %B %d') %></p>
       <h3><%= link_to post.title, post %></h3>
       <hr>
     <% end %>

@@ -1,12 +1,16 @@
 @import 'section-title';
 
+// General
+.post-time {
+  color: $border-color;
+  margin-bottom: 0;
+}
+
+// Index styling
+
 .posts-wrapper {
   margin: 0 5%;
   text-align: center;
-  p {
-    color: $border-color;
-    margin-bottom: 0;
-  }
   h3 {
     margin: .5rem 0;
   }
@@ -14,5 +18,23 @@
     width: 10%;
     border: 1px solid $border-color;
     margin: 2rem auto;
+  }
+}
+
+// Show page styling
+
+.post-wrapper {
+  margin: 0 15%;
+  text-align: center;
+  .post-time {
+    margin-top: 2.5rem;
+  }
+  .post-title {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .post-content {
+    text-align: left;
+    max-width: 800px;
   }
 }
