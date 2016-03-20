@@ -127,6 +127,13 @@ li {
 
 // -----Nav Bar-----
 
+#main-navigation.frontpage-nav {
+  background-color: rgba(0,0,0,0);
+  a {
+    color: $dark-color;
+  }
+}
+
 #main-navigation {
   background-color: $light-color;
   // desktop nav
@@ -152,6 +159,7 @@ li {
   // mobile nav
   #mobile-nav {
     display: none;
+    background-color: $light-color;
     padding: 1rem;
     @media (max-width: 768px) {
       display: block;

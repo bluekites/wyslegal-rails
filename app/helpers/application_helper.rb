@@ -17,4 +17,9 @@ module ApplicationHelper
     current_page?(link_path) ? "active" : ""
   end
  
+  #active nav helper
+  def frontpage_nav(link_path)
+    current_page?(link_path) ? "frontpage-nav" : ""
+  end
+ 
 end 

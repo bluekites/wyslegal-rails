@@ -14,11 +14,12 @@ section {
 
 // Master header
 
-#masthead {
+section#masthead {
+  padding-top: 0;
   background-image: url(image_path('hero.jpg'));
   background-size: cover;
   background-position: 0% 40%;
-  height: 46em;
+  height: 46rem;
   .logo-div {
     text-align: center;
     position: relative;
