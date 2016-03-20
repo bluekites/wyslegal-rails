@@ -87,6 +87,11 @@ section {
       margin: 2rem 3.165%;
       height: 15rem;
       background-color: white;
+      @media (max-width: 1010px) {
+        width: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
       @media (max-width: 569px) {
         width: 80%;
         margin-left: auto;
