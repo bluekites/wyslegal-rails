@@ -124,3 +124,23 @@ section {
   }
 }
 
+.employment {
+  background-image: url(image_path('employment_sm.jpg'));
+  background-size: cover;
+  background-position: bottom;
+}
+
+.family {
+  background-image: url(image_path('family_law_sm.jpg'));
+  background-size: cover;
+}
+
+.immigration {
+  background-image: url(image_path('immigration_sm.jpg'));
+  background-size: cover;
+}
+
+.bankruptcy {
+  background-image: url(image_path('bankruptcy_sm.jpg'));
+  background-size: cover;
+}
