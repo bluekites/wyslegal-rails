@@ -127,17 +127,16 @@ li {
 
 // -----Nav Bar-----
 
-#main-navigation.frontpage-nav {
-  background-color: rgba(0,0,0,0);
-  a {
-    color: $dark-color;
-  }
-}
-
 #main-navigation {
-  background-color: $light-color;
   // desktop nav
+  #desktop-nav.frontpage-nav {
+    background-color: rgba(0,0,0,0);
+    a {
+      color: $dark-color;
+    }
+  }
   #desktop-nav {
+    background-color: $light-color;
     padding: 1.5rem 5%;
     .logo {
       float: left;

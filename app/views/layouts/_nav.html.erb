@@ -1,5 +1,5 @@
-<header id="main-navigation" class="<%= frontpage_nav(root_path) %>">
-  <div id="desktop-nav" class="clearfix">
+<header id="main-navigation">
+  <div id="desktop-nav" class="clearfix <%= frontpage_nav(root_path) %>">
     <%= link_to "WYS Legal", root_path, 'data-no-turbolink' => true, class: "logo" %>
     <nav>
       <%= link_to "Home", root_path, 'data-no-turbolink' => true, class: "#{active_class(root_path)}" %>
