@@ -133,10 +133,6 @@ li {
     background-color: rgba(0,0,0,0);
     a {
       color: white;
-      text-transform: uppercase;
-    }
-    a:hover {
-      color: $dark-color;
     }
   }
   #desktop-nav {
@@ -153,6 +149,10 @@ li {
       padding-top: .7em;
       a {
         padding-left: 2em;
+        text-transform: uppercase;
+        &:hover {
+          color: $dark-color;
+        }
       }
     }
     @media screen and (max-width: 768px) {
