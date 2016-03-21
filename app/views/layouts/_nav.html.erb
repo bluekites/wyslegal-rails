@@ -3,6 +3,7 @@
     <%= link_to "WYS Legal", root_path, 'data-no-turbolink' => true, class: "logo" %>
     <nav>
       <%= link_to "Home", root_path, 'data-no-turbolink' => true, class: "#{active_class(root_path)}" %>
+      <%= link_to "Services", services_path, class: "#{active_class(services_path)}" %>
       <%= link_to "Blog", posts_path, class: "#{active_class(posts_path)}"%>
       <%= link_to "Contact", new_contact_path, class: "#{active_class(new_contact_path)}" %>
       <% if user_signed_in? %>
@@ -21,6 +22,7 @@
       <hr>
       <ul>
         <li><%= link_to "Home", root_path, 'data-no-turbolink' => true, class: "#{active_class(root_path)}" %></li>
+        <li><%= link_to "Services", services_path, class: "#{active_class(services_path)}" %></li>
         <li><%= link_to "Blog", posts_path, class: "#{active_class(posts_path)}"%></li>
         <li><%= link_to "Contact", new_contact_path, class: "#{active_class(new_contact_path)}" %></li>
         <% if user_signed_in? %>
