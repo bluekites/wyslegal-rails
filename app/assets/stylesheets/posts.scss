@@ -24,7 +24,9 @@
 // Show page styling
 
 .post-wrapper {
-  margin: 0 15%;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
   .post-time {
     margin-top: 2.5rem;
@@ -35,6 +37,6 @@
   }
   .post-content {
     text-align: left;
-    max-width: 800px;
+    word-wrap: break-word;
   }
 }

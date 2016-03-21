@@ -37,7 +37,10 @@ section#masthead {
       filter: brightness(400%);
       width: 600px;
       @media (max-width: 768px) {
-        width: 250px;
+        width: 450px;
+      }
+      @media (max-width: 450px) {
+        width: 300px;
       }
     }
     h1 {
@@ -46,8 +49,11 @@ section#masthead {
       font-size: 4.5rem;
       margin-top: .8em;
       color: $light-color;
+      @media (max-width: 1080px) {
+        font-size: 3.5rem;
+      }
       @media (max-width: 768px) {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
       }
     }
   }
