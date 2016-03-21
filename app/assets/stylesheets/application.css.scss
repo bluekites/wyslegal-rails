@@ -132,6 +132,10 @@ li {
   #desktop-nav.frontpage-nav {
     background-color: rgba(0,0,0,0);
     a {
+      color: white;
+      text-transform: uppercase;
+    }
+    a:hover {
       color: $dark-color;
     }
   }
@@ -148,7 +152,7 @@ li {
       float: right;
       padding-top: .7em;
       a {
-        padding-left: .7em;
+        padding-left: 2em;
       }
     }
     @media screen and (max-width: 768px) {
@@ -241,8 +245,8 @@ footer {
     color: white;
   }
 }
- 
- 
+
+
 // Google Map
 #googleMap {
   width: 400px;
