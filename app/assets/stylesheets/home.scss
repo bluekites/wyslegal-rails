@@ -158,6 +158,11 @@ section#masthead {
   background-position: bottom;
 }
 
+.injury {
+  background-image: url(image_path('personal_injury_sm.jpg'));
+  background-size: cover;
+}
+
 .family {
   background-image: url(image_path('family_law_sm.jpg'));
   background-size: cover;
@@ -165,6 +170,11 @@ section#masthead {
 
 .immigration {
   background-image: url(image_path('immigration_sm.jpg'));
+  background-size: cover;
+}
+
+.estate {
+  background-image: url(image_path('estate_sm.jpg'));
   background-size: cover;
 }
 

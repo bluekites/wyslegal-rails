@@ -199,14 +199,23 @@ li {
 footer {
   padding: 1rem 5%;
   background-color: $dark-color;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
   p {
     float: left;
     padding-top: .4rem;
     color: $light-color;
+    @media (max-width: 768px) {
+      float: none;
+    }
   }
   .footer-link {
     float: right;
     padding-top: .8rem;
+    @media (max-width: 768px) {
+      float: none;
+    }
     a {
       padding: 0 .5rem;
       color: $light-color;
