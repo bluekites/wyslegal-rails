@@ -20,12 +20,20 @@ section#masthead {
   background-size: cover;
   background-position: 0% 40%;
   height: 50rem;
+  @media (max-width: 768px) {
+    background-image: url(image_path('hero_sm.jpg'));
+    background-position: 50% 50%;
+    height: 40rem;
+  }
   .logo-div {
     text-align: center;
     position: relative;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media (max-width: 768px) {
+      top: 40%;
+    }
     .logo-img {
       filter: brightness(400%); 
       width: 300px;
