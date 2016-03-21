@@ -13,10 +13,9 @@ section {
 
 
 // Master header
-
 section#masthead {
   padding-top: 0;
-  background-image: url(image_path('hero.jpg'));
+  background-image: linear-gradient(rgba(41, 128, 185, 0.6), rgba(44, 62, 80, 0.9) ), url(image_path('hero.jpg'));
   background-size: cover;
   background-position: 0% 40%;
   height: 50rem;
@@ -35,7 +34,7 @@ section#masthead {
       top: 40%;
     }
     .logo-img {
-      filter: brightness(400%); 
+      filter: brightness(400%);
       width: 300px;
     }
     h1 {
