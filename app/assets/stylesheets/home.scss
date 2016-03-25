@@ -15,8 +15,10 @@ section {
 // Master header
 section#masthead {
   padding-top: 0;
+  position: relative;
   background-image: linear-gradient(rgba(41, 128, 185, 0.6), rgba(44, 62, 80, 0.9) ), url(image_path('hero.jpg'));
   background-size: cover;
+  backgroun-repeat: no-repeat;
   background-position: 0% 40%;
   height: 50rem;
   @media (max-width: 768px) {
@@ -26,13 +28,11 @@ section#masthead {
   }
   .logo-div {
     text-align: center;
-    position: relative;
-    top: 30%;
+    position: absolute;
+    width: 90%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    @media (max-width: 768px) {
-      top: 40%;
-    }
+    transform: translate(-49.3%, -50%);
     .logo-img {
       filter: brightness(400%);
       width: 600px;
@@ -46,7 +46,7 @@ section#masthead {
     h1 {
       font-family: "Gentium Book", serif;
       font-weight: 500;
-      font-size: 4.5rem;
+      font-size: 3.5rem;
       margin-top: .8em;
       color: $light-color;
       @media (max-width: 1080px) {
