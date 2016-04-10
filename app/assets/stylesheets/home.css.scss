@@ -20,7 +20,7 @@ section#masthead {
   background-size: cover;
   backgroun-repeat: no-repeat;
   background-position: 0% 40%;
-  height: 50rem;
+  height: 100vh;
   @media (max-width: 768px) {
     background-image: linear-gradient(rgba(41, 128, 185, 0.6), rgba(44, 62, 80, 0.9) ), url(image_path('hero_sm.jpg'));
     background-position: 50% 50%;
