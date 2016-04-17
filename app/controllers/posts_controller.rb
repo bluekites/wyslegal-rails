@@ -19,7 +19,8 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to @post, notice: "Success!"
     else
-      render :new, notice: "Failed to create post."
+      flash.now[:notice] = "Could not create post."
+      render :new
     end
   end
   
@@ -30,7 +31,8 @@ class PostsController < ApplicationController
     if @post.update(post_params)
       redirect_to @post, notice: "Success!"
     else
-      render :edit, notice: "Failed to update post."
+      flash.now[:notice] = "Could not update post."
+      render :edit
     end
   end
   
