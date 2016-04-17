@@ -83,7 +83,12 @@ section#masthead {
       border: solid 2px $border-color;
     }
   }
-  .wrapper {
+  .about-wrapper {
+    width: 60%;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+      width: 80%;
+    }
     h2 {
       font-weight: 700;
       text-transform: uppercase;
